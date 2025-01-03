@@ -1,8 +1,10 @@
-from usvisa.logger.logging import logging
+# Example usage:
 
-# Example usage of logging
-logging.info("This is an info message.")
-logging.error("This is an error message.")
-
-# Example of logging debug-level messages (if you want more verbose logging)
-logging.debug("This is a debug message.")
+from usvisa.exception.exception import usvisaException
+import sys
+try:
+    # Some code that may raise an error
+    raise ValueError("An example error")
+except Exception as e:
+    # Raising the custom exception with a simplified message
+    raise usvisaException(str(e))
