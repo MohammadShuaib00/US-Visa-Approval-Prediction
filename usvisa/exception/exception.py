@@ -39,10 +39,4 @@ class usvisaException(Exception):
         return self.error_message
 
 
-# Example usage:
-try:
-    # Some code that may raise an error
-    raise ValueError("An example error")
-except Exception as e:
-    # Raising the custom exception with detailed message
-    raise usvisaException(str(e), sys.exc_info())
+
