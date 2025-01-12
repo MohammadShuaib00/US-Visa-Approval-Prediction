@@ -3,7 +3,7 @@ import sys
 from usvisa.logger.logging import logging
 from usvisa.exception.exception import usvisaException
 from usvisa.configuration.mongo_db_connection import MongoDBClient
-from usvisa.constant import *
+from usvisa.constants import *
 from typing import Optional
 import numpy as np
 import pandas as pd

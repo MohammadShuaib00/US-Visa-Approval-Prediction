@@ -4,7 +4,7 @@ from usvisa.exception.exception import usvisaException
 from usvisa.logger.logging import logging
 
 import os
-from usvisa.constant import DATABASE_NAME, MONGODB_URL_KEY
+from usvisa.constants import DATABASE_NAME, MONGODB_URL_KEY
 import pymongo
 import certifi
 
