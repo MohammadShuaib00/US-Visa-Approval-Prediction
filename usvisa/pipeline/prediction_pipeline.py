@@ -6,7 +6,7 @@ import pandas as pd
 from usvisa.entity.entity_config import USvisaPredictorConfig
 from usvisa.utils.model.s3_estimator import USvisaEstimator
 from usvisa.exception.exception import usvisaException
-from usvisa.logger import logging
+from usvisa.logger.logging import logging
 from usvisa.utils.main_utils import read_yaml_file
 from pandas import DataFrame
 
