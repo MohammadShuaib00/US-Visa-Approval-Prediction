@@ -1,5 +1,6 @@
 import os
 import sys
+from dotenv import load_dotenv
 from usvisa.logger.logging import logging
 from usvisa.exception.exception import usvisaException
 from usvisa.configuration.mongo_db_connection import MongoDBClient
@@ -8,6 +9,7 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 
+load_dotenv()
 
 class USDataImport:
     def __init__(self):
